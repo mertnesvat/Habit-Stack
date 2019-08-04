@@ -1,0 +1,6 @@
+framework module Pods_Habit_Stack {
+  umbrella header "Pods-Habit Stack-umbrella.h"
+
+  export *
+  module * { export * }
+}
