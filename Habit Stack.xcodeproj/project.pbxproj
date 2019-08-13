@@ -25,6 +25,10 @@
 		4127405522F654F30069D41C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405422F654F30069D41C /* UserDefaults.swift */; };
 		4127405722F656560069D41C /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405622F656560069D41C /* AddHabitViewController.swift */; };
 		4127405922F6565B0069D41C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405822F6565B0069D41C /* TodayViewController.swift */; };
+		4155560623033D4300EE963F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4155560523033D4300EE963F /* GoogleService-Info.plist */; };
+		41555608230341C400EE963F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41555607230341C400EE963F /* EmptyView.swift */; };
+		4155560B2303491A00EE963F /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155560A2303491A00EE963F /* WordModel.swift */; };
+		4155560D23034BBB00EE963F /* F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155560C23034BBB00EE963F /* F.swift */; };
 		DCA38BD23BEDF771133E4CD2 /* Pods_Habit_Stack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC5FD3C1EEF33C6ADB9496 /* Pods_Habit_Stack.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,10 @@
 		4127405422F654F30069D41C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		4127405622F656560069D41C /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
 		4127405822F6565B0069D41C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4155560523033D4300EE963F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41555607230341C400EE963F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		4155560A2303491A00EE963F /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		4155560C23034BBB00EE963F /* F.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F.swift; sourceTree = "<group>"; };
 		5C682E6AEEC48AB0113DB459 /* Pods-Habit Stack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Stack.debug.xcconfig"; path = "Target Support Files/Pods-Habit Stack/Pods-Habit Stack.debug.xcconfig"; sourceTree = "<group>"; };
 		9CDBB6DC6BE1DC261621ED50 /* Pods-Habit Stack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Stack.release.xcconfig"; path = "Target Support Files/Pods-Habit Stack/Pods-Habit Stack.release.xcconfig"; sourceTree = "<group>"; };
 		B3FC5FD3C1EEF33C6ADB9496 /* Pods_Habit_Stack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Stack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +95,7 @@
 		4127402322F60D6E0069D41C /* Habit Stack */ = {
 			isa = PBXGroup;
 			children = (
+				415556092303490900EE963F /* Models */,
 				4127404922F623DA0069D41C /* Services */,
 				4127404822F623CC0069D41C /* Components */,
 				4127404122F61D4D0069D41C /* Extensions */,
@@ -95,6 +104,7 @@
 				4127402D22F60D6F0069D41C /* LaunchScreen.storyboard */,
 				4127403722F60F050069D41C /* R.generated.swift */,
 				4127403022F60D6F0069D41C /* Info.plist */,
+				4155560523033D4300EE963F /* GoogleService-Info.plist */,
 				4127403B22F618510069D41C /* Assets.xcassets */,
 				4127403922F60F780069D41C /* key.strings */,
 			);
@@ -106,6 +116,7 @@
 			children = (
 				4127404022F61C580069D41C /* Labels */,
 				4127404622F620A50069D41C /* MainButton.swift */,
+				41555607230341C400EE963F /* EmptyView.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 				4127404222F61D570069D41C /* UI.swift */,
 				4127404422F61DCC0069D41C /* ThemeColor.swift */,
 				4127405422F654F30069D41C /* UserDefaults.swift */,
+				4155560C23034BBB00EE963F /* F.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +176,14 @@
 				4127405822F6565B0069D41C /* TodayViewController.swift */,
 			);
 			path = Selection;
+			sourceTree = "<group>";
+		};
+		415556092303490900EE963F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4155560A2303491A00EE963F /* WordModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		44B9CE6BE2E0AFF8E9C9ECB4 /* Frameworks */ = {
@@ -246,6 +266,7 @@
 			files = (
 				4127403A22F60F780069D41C /* key.strings in Resources */,
 				4127402F22F60D6F0069D41C /* LaunchScreen.storyboard in Resources */,
+				4155560623033D4300EE963F /* GoogleService-Info.plist in Resources */,
 				4127403C22F618510069D41C /* Assets.xcassets in Resources */,
 				4127402A22F60D6E0069D41C /* Main.storyboard in Resources */,
 			);
@@ -268,7 +289,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -284,7 +305,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Habit Stack/Pods-Habit Stack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -296,6 +319,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -303,7 +327,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -315,6 +341,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,11 +379,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4127402722F60D6E0069D41C /* WelcomeVC.swift in Sources */,
+				41555608230341C400EE963F /* EmptyView.swift in Sources */,
 				4127403F22F61C220069D41C /* TitleLabel.swift in Sources */,
 				4127404722F620A50069D41C /* MainButton.swift in Sources */,
 				4127402522F60D6E0069D41C /* AppDelegate.swift in Sources */,
 				4127404322F61D570069D41C /* UI.swift in Sources */,
 				4127404B22F623F90069D41C /* IntroViewController.swift in Sources */,
+				4155560B2303491A00EE963F /* WordModel.swift in Sources */,
 				4127405322F654470069D41C /* MainTabViewController.swift in Sources */,
 				4127403822F60F050069D41C /* R.generated.swift in Sources */,
 				4127405522F654F30069D41C /* UserDefaults.swift in Sources */,
@@ -365,6 +394,7 @@
 				4127405722F656560069D41C /* AddHabitViewController.swift in Sources */,
 				4127405022F651060069D41C /* HabitSelectionViewController.swift in Sources */,
 				4127404522F61DCC0069D41C /* ThemeColor.swift in Sources */,
+				4155560D23034BBB00EE963F /* F.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

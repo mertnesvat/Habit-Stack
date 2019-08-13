@@ -19,4 +19,9 @@ target 'Habit Stack' do
   pod 'Firebase/Core'
   pod 'R.swift'
   pod 'SwiftyUserDefaults'
+  pod 'Firebase/Auth'
+  pod 'CodableFirebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+
 end

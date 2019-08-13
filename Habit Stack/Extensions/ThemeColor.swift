@@ -3,7 +3,10 @@ import UIKit
 extension UIColor {
     static var mainTextColor: UIColor { return UIColor().color(hex: "#314259") }
     static var brandOrange: UIColor { return UIColor().color(hex: "#FFA693") }
-
+    static var brandPink: UIColor { return UIColor().color(hex: "#FE979C") }
+    static var titleGray: UIColor { return UIColor().color(hex: "#90A4B7") }
+    static var tabBarBlue: UIColor { return UIColor().color(hex: "#414B6B") }
+    
 }
 
 extension UIFont {

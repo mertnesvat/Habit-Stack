@@ -16,7 +16,21 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 7 images.
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
+    
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
     /// Image `BG_reversed`.
     static let bg_reversed = Rswift.ImageResource(bundle: R.hostingBundle, name: "BG_reversed")
@@ -30,8 +44,12 @@ struct R: Rswift.Validatable {
     static let clock = Rswift.ImageResource(bundle: R.hostingBundle, name: "clock")
     /// Image `habitsIcon`.
     static let habitsIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "habitsIcon")
+    /// Image `noWords`.
+    static let noWords = Rswift.ImageResource(bundle: R.hostingBundle, name: "noWords")
     /// Image `todayIcon`.
     static let todayIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "todayIcon")
+    /// Image `wsAdd`.
+    static let wsAdd = Rswift.ImageResource(bundle: R.hostingBundle, name: "wsAdd")
     
     /// `UIImage(named: "BG", bundle: ..., traitCollection: ...)`
     static func bG(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -63,9 +81,19 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.habitsIcon, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "noWords", bundle: ..., traitCollection: ...)`
+    static func noWords(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.noWords, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "todayIcon", bundle: ..., traitCollection: ...)`
     static func todayIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.todayIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "wsAdd", bundle: ..., traitCollection: ...)`
+    static func wsAdd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.wsAdd, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}

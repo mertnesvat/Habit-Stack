@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyUserDefaults
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = Defaults[.currentUser] == true ? R.storyboard.main.storyTab() : R.storyboard.main.storyLogin()
+        FirebaseApp.configure()
+
+        Auth.auth().signInAnonymously() { (authResult, error) in
+            // ...
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            if error == nil {
+                Defaults[.currentUser] = false
+                self.window?.rootViewController = R.storyboard.main.storyTab()
+            } else {
+                Defaults[.currentUser] = true
+                self.window?.rootViewController = R.storyboard.main.storyLogin()
+            }
+            
+            self.window?.makeKeyAndVisible()
+
+        }
+
         
         return true
     }
