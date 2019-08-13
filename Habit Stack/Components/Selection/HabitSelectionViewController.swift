@@ -8,9 +8,9 @@ class HabitSelectionViewController: UIViewController {
         setup()
         layout()
         
-//        F.addWord(WordModel(word: "Manzana4", type: "Feminine Noun", translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
-//        F.addWord(WordModel(word: "Manzana5", type: "Feminine Noun", translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
-//        F.addWord(WordModel(word: "Manzana6", type: "Feminine Noun", translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
+        F.addWord(WordModel(word: "Manzana4", type: WordType.feminineNoun, translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
+        F.addWord(WordModel(word: "Manzana5", type: WordType.masculineNoun, translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
+        F.addWord(WordModel(word: "Manzana6", type: WordType.adjective, translation: "Apple", examples: ["Me gusta los manzanas"], createdDate: Date()))
 
         F.fetchWords { words in
             print(words)

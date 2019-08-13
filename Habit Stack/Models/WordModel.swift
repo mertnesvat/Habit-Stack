@@ -1,8 +1,16 @@
 import Foundation
 
+enum WordType: Int, Codable {
+    case feminineNoun
+    case masculineNoun
+    case adjective
+    case verb
+    case pronoun
+}
+
 struct WordModel: Codable {
     var word: String
-    var type: String
+    var type: WordType?
     var translation: String = ""
     var examples: [String]?
     var createdDate: Date
@@ -27,13 +35,13 @@ struct WordModel: Codable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         word = try values.decode(String.self, forKey: .word)
-        type = try values.decode(String.self, forKey: .type)
+        type = try values.decode(WordType?.self, forKey: .type)
         translation = try values.decode(String.self, forKey: .translation)
         examples = try values.decode([String].self, forKey: .examples)
         createdDate = try values.decode(Date.self, forKey: .createdDate)
     }
     
-    init(word: String, type: String, translation: String, examples: [String]?, createdDate: Date) {
+    init(word: String, type: WordType?, translation: String, examples: [String]?, createdDate: Date) {
         self.word = word
         self.type = type
         self.translation = translation
