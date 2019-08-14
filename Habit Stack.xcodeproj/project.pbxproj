@@ -20,7 +20,7 @@
 		4127404722F620A50069D41C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127404622F620A50069D41C /* MainButton.swift */; };
 		4127404B22F623F90069D41C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127404A22F623F90069D41C /* IntroViewController.swift */; };
 		4127404E22F624950069D41C /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127404D22F624950069D41C /* IntroViewModel.swift */; };
-		4127405022F651060069D41C /* HabitSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127404F22F651060069D41C /* HabitSelectionViewController.swift */; };
+		4127405022F651060069D41C /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127404F22F651060069D41C /* WordsViewController.swift */; };
 		4127405322F654470069D41C /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405222F654470069D41C /* MainTabViewController.swift */; };
 		4127405522F654F30069D41C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405422F654F30069D41C /* UserDefaults.swift */; };
 		4127405722F656560069D41C /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405622F656560069D41C /* AddHabitViewController.swift */; };
@@ -48,7 +48,7 @@
 		4127404622F620A50069D41C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		4127404A22F623F90069D41C /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		4127404D22F624950069D41C /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
-		4127404F22F651060069D41C /* HabitSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitSelectionViewController.swift; sourceTree = "<group>"; };
+		4127404F22F651060069D41C /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
 		4127405222F654470069D41C /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		4127405422F654F30069D41C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		4127405622F656560069D41C /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		4127405122F654250069D41C /* Selection */ = {
 			isa = PBXGroup;
 			children = (
-				4127404F22F651060069D41C /* HabitSelectionViewController.swift */,
+				4127404F22F651060069D41C /* WordsViewController.swift */,
 				4127405222F654470069D41C /* MainTabViewController.swift */,
 				4127405622F656560069D41C /* AddHabitViewController.swift */,
 				4127405822F6565B0069D41C /* TodayViewController.swift */,
@@ -289,7 +289,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,7 +392,7 @@
 				4127405922F6565B0069D41C /* TodayViewController.swift in Sources */,
 				4127404E22F624950069D41C /* IntroViewModel.swift in Sources */,
 				4127405722F656560069D41C /* AddHabitViewController.swift in Sources */,
-				4127405022F651060069D41C /* HabitSelectionViewController.swift in Sources */,
+				4127405022F651060069D41C /* WordsViewController.swift in Sources */,
 				4127404522F61DCC0069D41C /* ThemeColor.swift in Sources */,
 				4155560D23034BBB00EE963F /* F.swift in Sources */,
 			);

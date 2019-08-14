@@ -1,7 +1,9 @@
 import UIKit
 import EasyPeasy
 
-class HabitSelectionViewController: UIViewController {
+class WordsViewController: UIViewController {
+    
+    let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,7 @@ class HabitSelectionViewController: UIViewController {
     }
 }
 
-extension HabitSelectionViewController {
+extension WordsViewController {
     private func layout() {
         
     }
@@ -36,7 +38,7 @@ extension HabitSelectionViewController {
     }
 }
 
-extension HabitSelectionViewController {
+extension WordsViewController {
     
     @objc func addAction() {
         

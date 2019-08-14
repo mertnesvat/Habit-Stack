@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="939" y="126"/>
         </scene>
-        <!--Habit Selection View Controller-->
+        <!--Words View Controller-->
         <scene sceneID="odm-Yr-qAg">
             <objects>
-                <viewController id="Erb-60-Cby" customClass="HabitSelectionViewController" customModule="Habit_Stack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Erb-60-Cby" customClass="WordsViewController" customModule="Habit_Stack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h4L-Be-yk8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
