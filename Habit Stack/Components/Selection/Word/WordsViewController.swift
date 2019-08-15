@@ -10,6 +10,7 @@ class WordsViewController: UIViewController {
     let tableView = UITableView()
     let viewModel = WordsViewModel()
     let emptyV = EmptyView()
+    var addWord: AddHabitViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,9 @@ extension WordsViewController {
 
 extension WordsViewController {
     @objc func addAction() {
-        
+        self.addWord = AddHabitViewController()
+        self.addChild(addWord!)
+        view.addSubview(self.addWord!.view)
+        self.addWord?.didMove(toParent: self)
     }
 }

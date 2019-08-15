@@ -97,38 +97,6 @@
             endingLineNumber = "40"
             landmarkName = "setup()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Habit_Stack.WordsViewController.setup() -&gt; ()"
-                  moduleName = "Habit Stack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mert/Developer/Habit%20Stack/Habit%20Stack/Components/Selection/WordsViewController.swift"
-                  timestampString = "587520962.24131"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1869">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int, Habit_Stack.WordModel, Habit_Stack.WordCell) -&gt; () in Habit_Stack.WordsViewController.setup() -&gt; ()"
-                  moduleName = "Habit Stack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mert/Developer/Habit%20Stack/Habit%20Stack/Components/Selection/WordsViewController.swift"
-                  timestampString = "587520962.2426701"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,6 +112,22 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "setup(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit Stack/Components/Selection/AddHabitViewController.swift"
+            timestampString = "587576824.795083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "layout()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
