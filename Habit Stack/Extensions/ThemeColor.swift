@@ -29,4 +29,8 @@ extension UIFont {
     static var desc: UIFont {
         return UIFont(name: "Avenir-Light", size: 14)?.withTraits(traits: UIFontDescriptor.SymbolicTraits.traitItalic) ?? UIFont.systemFont(ofSize: 14)
     }
+    
+    static var typeTagSmallText: UIFont {
+        return UIFont(name: "Avenir-Light", size: 12) ?? UIFont.systemFont(ofSize: 12)
+    }
 }
