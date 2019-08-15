@@ -32,6 +32,7 @@ extension WordsViewController {
         tableView.easy.layout(Edges())
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65.0
+        tableView.separatorStyle = .none
 
 //        viewModel.wordList.subscribe(onNext: { [weak self] models in
 //            self?.tableView.reloadData()

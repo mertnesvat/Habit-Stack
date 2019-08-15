@@ -10,13 +10,23 @@ class WordCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addSubviews([word, translation, example, type])
+        contentView.addSubviews([word, translation, example, type])
+        translation.font = UIFont.heading3
+        contentView.backgroundColor = .white
+        backgroundColor = .clear
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 6)
+        contentView.layer.shadowRadius = 18
+        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.cornerRadius = 8
+        contentView.layer.masksToBounds = true
+        
         layout()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        addSubviews([word, translation, example, type])
+        contentView.addSubviews([word, translation, example, type])
         layout()
     }
     
@@ -31,10 +41,11 @@ class WordCell: UITableViewCell {
     }
     
     func layout() {
-        word.easy.layout(Left(8), Top())
-        translation.easy.layout(Left(8), Top(8).to(word, .bottom))
-        example.easy.layout(Bottom(), Right(8), Left(8), Top(20).to(translation, .bottom))
-        type.easy.layout(Right(8), Top())
+        contentView.easy.layout(Edges(8))
+        word.easy.layout(Left(8), Top(5), Height(34))
+        translation.easy.layout(Left(8), Top(8).to(word, .bottom), Height(19))
+        example.easy.layout(Bottom(), Right(8), Left(8), Top(20).to(translation, .bottom), Height(44))
+        type.easy.layout(Right(8), Top(5))
     }
 }
 

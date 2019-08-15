@@ -41,5 +41,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AvenirNextCondensed-Bold.ttf</string>
+		<string>AvenirNextCondensed-BoldItalic.ttf</string>
+		<string>AvenirNextCondensed-DemiBold.ttf</string>
+		<string>AvenirNextCondensed-DemiBoldItalic.ttf</string>
+		<string>AvenirNextCondensed-Heavy.ttf</string>
+		<string>AvenirNextCondensed-HeavyItalic.ttf</string>
+		<string>AvenirNextCondensed-Italic.ttf</string>
+		<string>AvenirNextCondensed-Medium.ttf</string>
+		<string>AvenirNextCondensed-MediumItalic.ttf</string>
+		<string>AvenirNextCondensed-Regular.ttf</string>
+		<string>AvenirNextCondensed-UltraLight.ttf</string>
+		<string>AvenirNextCondensed-UltraLightItalic.ttf</string>
+	</array>
 </dict>
 </plist>

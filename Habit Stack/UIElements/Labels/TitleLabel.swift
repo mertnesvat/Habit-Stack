@@ -35,3 +35,21 @@ class DescriptionLabel: UILabel {
         self.textColor = UIColor.mainTextColor
     }
 }
+
+class ExampleLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+        
+    }
+    
+    func setup() {
+        self.font = UIFont.desc
+        self.textColor = UIColor.mainTextColor
+    }
+}

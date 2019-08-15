@@ -13,6 +13,7 @@ struct R: Rswift.Validatable {
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
   
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
   
@@ -25,6 +26,111 @@ struct R: Rswift.Validatable {
     static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.googleServiceInfoPlist
       return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.font` struct is generated, and contains static references to 12 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `AvenirNextCondensed-BoldItalic`.
+    static let avenirNextCondensedBoldItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-BoldItalic")
+    /// Font `AvenirNextCondensed-Bold`.
+    static let avenirNextCondensedBold = Rswift.FontResource(fontName: "AvenirNextCondensed-Bold")
+    /// Font `AvenirNextCondensed-DemiBoldItalic`.
+    static let avenirNextCondensedDemiBoldItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-DemiBoldItalic")
+    /// Font `AvenirNextCondensed-DemiBold`.
+    static let avenirNextCondensedDemiBold = Rswift.FontResource(fontName: "AvenirNextCondensed-DemiBold")
+    /// Font `AvenirNextCondensed-HeavyItalic`.
+    static let avenirNextCondensedHeavyItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-HeavyItalic")
+    /// Font `AvenirNextCondensed-Heavy`.
+    static let avenirNextCondensedHeavy = Rswift.FontResource(fontName: "AvenirNextCondensed-Heavy")
+    /// Font `AvenirNextCondensed-Italic`.
+    static let avenirNextCondensedItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-Italic")
+    /// Font `AvenirNextCondensed-MediumItalic`.
+    static let avenirNextCondensedMediumItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-MediumItalic")
+    /// Font `AvenirNextCondensed-Medium`.
+    static let avenirNextCondensedMedium = Rswift.FontResource(fontName: "AvenirNextCondensed-Medium")
+    /// Font `AvenirNextCondensed-Regular`.
+    static let avenirNextCondensedRegular = Rswift.FontResource(fontName: "AvenirNextCondensed-Regular")
+    /// Font `AvenirNextCondensed-UltraLightItalic`.
+    static let avenirNextCondensedUltraLightItalic = Rswift.FontResource(fontName: "AvenirNextCondensed-UltraLightItalic")
+    /// Font `AvenirNextCondensed-UltraLight`.
+    static let avenirNextCondensedUltraLight = Rswift.FontResource(fontName: "AvenirNextCondensed-UltraLight")
+    
+    /// `UIFont(name: "AvenirNextCondensed-Bold", size: ...)`
+    static func avenirNextCondensedBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedBold, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-BoldItalic", size: ...)`
+    static func avenirNextCondensedBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedBoldItalic, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-DemiBold", size: ...)`
+    static func avenirNextCondensedDemiBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedDemiBold, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-DemiBoldItalic", size: ...)`
+    static func avenirNextCondensedDemiBoldItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedDemiBoldItalic, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-Heavy", size: ...)`
+    static func avenirNextCondensedHeavy(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedHeavy, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-HeavyItalic", size: ...)`
+    static func avenirNextCondensedHeavyItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedHeavyItalic, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-Italic", size: ...)`
+    static func avenirNextCondensedItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedItalic, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-Medium", size: ...)`
+    static func avenirNextCondensedMedium(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedMedium, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-MediumItalic", size: ...)`
+    static func avenirNextCondensedMediumItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedMediumItalic, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-Regular", size: ...)`
+    static func avenirNextCondensedRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedRegular, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-UltraLight", size: ...)`
+    static func avenirNextCondensedUltraLight(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedUltraLight, size: size)
+    }
+    
+    /// `UIFont(name: "AvenirNextCondensed-UltraLightItalic", size: ...)`
+    static func avenirNextCondensedUltraLightItalic(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: avenirNextCondensedUltraLightItalic, size: size)
+    }
+    
+    static func validate() throws {
+      if R.font.avenirNextCondensedBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-Bold' could not be loaded, is 'AvenirNextCondensed-Bold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-BoldItalic' could not be loaded, is 'AvenirNextCondensed-BoldItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedDemiBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-DemiBold' could not be loaded, is 'AvenirNextCondensed-DemiBold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedDemiBoldItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-DemiBoldItalic' could not be loaded, is 'AvenirNextCondensed-DemiBoldItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedHeavy(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-Heavy' could not be loaded, is 'AvenirNextCondensed-Heavy.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedHeavyItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-HeavyItalic' could not be loaded, is 'AvenirNextCondensed-HeavyItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-Italic' could not be loaded, is 'AvenirNextCondensed-Italic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedMedium(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-Medium' could not be loaded, is 'AvenirNextCondensed-Medium.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedMediumItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-MediumItalic' could not be loaded, is 'AvenirNextCondensed-MediumItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-Regular' could not be loaded, is 'AvenirNextCondensed-Regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedUltraLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-UltraLight' could not be loaded, is 'AvenirNextCondensed-UltraLight.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.avenirNextCondensedUltraLightItalic(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AvenirNextCondensed-UltraLightItalic' could not be loaded, is 'AvenirNextCondensed-UltraLightItalic.ttf' added to the UIAppFonts array in this targets Info.plist?") }
     }
     
     fileprivate init() {}

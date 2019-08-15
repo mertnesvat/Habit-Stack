@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410D97FA23055F410060E34B /* AvenirNextCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97EE23055F410060E34B /* AvenirNextCondensed-Medium.ttf */; };
+		410D97FB23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97EF23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf */; };
+		410D97FC23055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F023055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf */; };
+		410D97FD23055F410060E34B /* AvenirNextCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F123055F410060E34B /* AvenirNextCondensed-Bold.ttf */; };
+		410D97FE23055F410060E34B /* AvenirNextCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F223055F410060E34B /* AvenirNextCondensed-BoldItalic.ttf */; };
+		410D97FF23055F410060E34B /* AvenirNextCondensed-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F323055F410060E34B /* AvenirNextCondensed-Heavy.ttf */; };
+		410D980023055F410060E34B /* AvenirNextCondensed-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F423055F410060E34B /* AvenirNextCondensed-DemiBold.ttf */; };
+		410D980123055F410060E34B /* AvenirNextCondensed-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F523055F410060E34B /* AvenirNextCondensed-HeavyItalic.ttf */; };
+		410D980223055F410060E34B /* AvenirNextCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F623055F410060E34B /* AvenirNextCondensed-Italic.ttf */; };
+		410D980323055F410060E34B /* AvenirNextCondensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F723055F410060E34B /* AvenirNextCondensed-MediumItalic.ttf */; };
+		410D980423055F410060E34B /* AvenirNextCondensed-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F823055F410060E34B /* AvenirNextCondensed-DemiBoldItalic.ttf */; };
+		410D980523055F410060E34B /* AvenirNextCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F923055F410060E34B /* AvenirNextCondensed-Regular.ttf */; };
 		4127402522F60D6E0069D41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127402422F60D6E0069D41C /* AppDelegate.swift */; };
 		4127402722F60D6E0069D41C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127402622F60D6E0069D41C /* WelcomeVC.swift */; };
 		4127402A22F60D6E0069D41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4127402822F60D6E0069D41C /* Main.storyboard */; };
@@ -35,6 +47,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410D97EE23055F410060E34B /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		410D97EF23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
+		410D97F023055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLightItalic.ttf"; sourceTree = "<group>"; };
+		410D97F123055F410060E34B /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		410D97F223055F410060E34B /* AvenirNextCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		410D97F323055F410060E34B /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
+		410D97F423055F410060E34B /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
+		410D97F523055F410060E34B /* AvenirNextCondensed-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		410D97F623055F410060E34B /* AvenirNextCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		410D97F723055F410060E34B /* AvenirNextCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-MediumItalic.ttf"; sourceTree = "<group>"; };
+		410D97F823055F410060E34B /* AvenirNextCondensed-DemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		410D97F923055F410060E34B /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		4127402122F60D6E0069D41C /* Habit Stack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Stack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4127402422F60D6E0069D41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4127402622F60D6E0069D41C /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -78,6 +102,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410D97ED23055F340060E34B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				410D97F123055F410060E34B /* AvenirNextCondensed-Bold.ttf */,
+				410D97F223055F410060E34B /* AvenirNextCondensed-BoldItalic.ttf */,
+				410D97F423055F410060E34B /* AvenirNextCondensed-DemiBold.ttf */,
+				410D97F823055F410060E34B /* AvenirNextCondensed-DemiBoldItalic.ttf */,
+				410D97F323055F410060E34B /* AvenirNextCondensed-Heavy.ttf */,
+				410D97F523055F410060E34B /* AvenirNextCondensed-HeavyItalic.ttf */,
+				410D97F623055F410060E34B /* AvenirNextCondensed-Italic.ttf */,
+				410D97EE23055F410060E34B /* AvenirNextCondensed-Medium.ttf */,
+				410D97F723055F410060E34B /* AvenirNextCondensed-MediumItalic.ttf */,
+				410D97F923055F410060E34B /* AvenirNextCondensed-Regular.ttf */,
+				410D97EF23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf */,
+				410D97F023055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		410D98062305628C0060E34B /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				4127404F22F651060069D41C /* WordsViewController.swift */,
+				4148E27C2304C82C00F5CDFF /* WordsViewModel.swift */,
+				4148E27E2304C97300F5CDFF /* WordCell.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
 		4127401822F60D6E0069D41C = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +164,7 @@
 				4155560523033D4300EE963F /* GoogleService-Info.plist */,
 				4127403B22F618510069D41C /* Assets.xcassets */,
 				4127403922F60F780069D41C /* key.strings */,
+				410D97ED23055F340060E34B /* Fonts */,
 			);
 			path = "Habit Stack";
 			sourceTree = "<group>";
@@ -174,12 +228,10 @@
 		4127405122F654250069D41C /* Selection */ = {
 			isa = PBXGroup;
 			children = (
-				4127404F22F651060069D41C /* WordsViewController.swift */,
-				4148E27C2304C82C00F5CDFF /* WordsViewModel.swift */,
+				410D98062305628C0060E34B /* Word */,
 				4127405222F654470069D41C /* MainTabViewController.swift */,
 				4127405622F656560069D41C /* AddHabitViewController.swift */,
 				4127405822F6565B0069D41C /* TodayViewController.swift */,
-				4148E27E2304C97300F5CDFF /* WordCell.swift */,
 			);
 			path = Selection;
 			sourceTree = "<group>";
@@ -272,9 +324,21 @@
 			files = (
 				4127403A22F60F780069D41C /* key.strings in Resources */,
 				4127402F22F60D6F0069D41C /* LaunchScreen.storyboard in Resources */,
+				410D980123055F410060E34B /* AvenirNextCondensed-HeavyItalic.ttf in Resources */,
 				4155560623033D4300EE963F /* GoogleService-Info.plist in Resources */,
+				410D980223055F410060E34B /* AvenirNextCondensed-Italic.ttf in Resources */,
 				4127403C22F618510069D41C /* Assets.xcassets in Resources */,
+				410D980023055F410060E34B /* AvenirNextCondensed-DemiBold.ttf in Resources */,
 				4127402A22F60D6E0069D41C /* Main.storyboard in Resources */,
+				410D97FD23055F410060E34B /* AvenirNextCondensed-Bold.ttf in Resources */,
+				410D980523055F410060E34B /* AvenirNextCondensed-Regular.ttf in Resources */,
+				410D97FA23055F410060E34B /* AvenirNextCondensed-Medium.ttf in Resources */,
+				410D980323055F410060E34B /* AvenirNextCondensed-MediumItalic.ttf in Resources */,
+				410D97FF23055F410060E34B /* AvenirNextCondensed-Heavy.ttf in Resources */,
+				410D980423055F410060E34B /* AvenirNextCondensed-DemiBoldItalic.ttf in Resources */,
+				410D97FC23055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf in Resources */,
+				410D97FB23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf in Resources */,
+				410D97FE23055F410060E34B /* AvenirNextCondensed-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

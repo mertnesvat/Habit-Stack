@@ -11,26 +11,26 @@ extension UIColor {
 
 extension UIFont {
     static var heading1: UIFont {
-        return UIFont(name: "Avenir-Heavy", size: 25) ?? UIFont.systemFont(ofSize: 25)
+        return UIFont(name: "AvenirNextCondensed-Medium", size: 25) ?? UIFont.systemFont(ofSize: 25)
     }
     
     static var heading2: UIFont {
-        return UIFont(name: "Avenir-Light", size: 20) ?? UIFont.systemFont(ofSize: 20)
+        return UIFont(name: "AvenirNextCondensed-Medium", size: 20) ?? UIFont.systemFont(ofSize: 20)
     }
     
     static var heading3: UIFont {
-        return UIFont(name: "Avenir-Light", size: 18) ?? UIFont.systemFont(ofSize: 17)
+        return UIFont(name: "AvenirNextCondensed-Regular", size: 18) ?? UIFont.systemFont(ofSize: 17)
     }
     
     static var normal: UIFont {
-        return UIFont(name: "Avenir-Light", size: 15) ?? UIFont.systemFont(ofSize: 15)
+        return UIFont(name: "AvenirNextCondensed-Regular", size: 15) ?? UIFont.systemFont(ofSize: 15)
     }
     
     static var desc: UIFont {
-        return UIFont(name: "Avenir-Light", size: 14)?.withTraits(traits: UIFontDescriptor.SymbolicTraits.traitItalic) ?? UIFont.systemFont(ofSize: 14)
+        return UIFont(name: "AvenirNextCondensed-Regular", size: 14) ?? UIFont.systemFont(ofSize: 15)
     }
     
     static var typeTagSmallText: UIFont {
-        return UIFont(name: "Avenir-Light", size: 12) ?? UIFont.systemFont(ofSize: 12)
+        return UIFont(name: "AvenirNextCondensed-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12)
     }
 }
