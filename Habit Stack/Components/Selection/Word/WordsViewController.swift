@@ -10,7 +10,7 @@ class WordsViewController: UIViewController {
     let tableView = UITableView()
     let viewModel = WordsViewModel()
     let emptyV = EmptyView()
-    var addWord: AddHabitViewController?
+    var addButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,16 @@ class WordsViewController: UIViewController {
 extension WordsViewController {
     func setup() {
         navigationItem.title = "Word Stack"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: R.image.wsAdd()!, style: UIBarButtonItem.Style.plain, target: self, action: #selector(addAction))
-        navigationItem.rightBarButtonItem?.tintColor = .brandPink
-        view.addSubview(tableView)
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: R.image.wsAdd()!, style: UIBarButtonItem.Style.plain, target: self, action: #selector(addAction))
+//        navigationItem.rightBarButtonItem?.tintColor = .brandPink
+        view.addSubviews([tableView, addButton])
         tableView.register(WordCell.self, forCellReuseIdentifier: "WordCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65.0
         tableView.separatorStyle = .none
+        
+        addButton.setImage(R.image.addIcon()!, for: .normal)
+        addButton.addTarget(self, action: #selector(addAction), for: .touchUpInside)
     }
     
     func setupRx() {
@@ -40,14 +43,12 @@ extension WordsViewController {
     
     private func layout() {
         tableView.easy.layout(Edges())
+        addButton.easy.layout(Bottom(16), Right(16), Height(50), Width(50))
     }
 }
 
 extension WordsViewController {
     @objc func addAction() {
-        self.addWord = AddHabitViewController()
-        self.addChild(addWord!)
-        view.addSubview(self.addWord!.view)
-        self.addWord?.didMove(toParent: self)
+        self.navigationController?.present(AddHabitViewController(), animated: true, completion: nil)
     }
 }

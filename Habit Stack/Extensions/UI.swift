@@ -48,3 +48,23 @@ extension UIView {
     }
 }
 
+class InsetTextField: UITextField {
+    
+    let inset: CGFloat = 10
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: inset)
+    }
+    
+    
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: inset)
+    }
+    
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: inset)
+    }
+    
+}
+
+

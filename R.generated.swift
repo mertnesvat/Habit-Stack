@@ -136,7 +136,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 9 images.
+  /// This `R.image` struct is generated, and contains static references to 10 images.
   struct image {
     /// Image `BG_reversed`.
     static let bg_reversed = Rswift.ImageResource(bundle: R.hostingBundle, name: "BG_reversed")
@@ -156,6 +156,8 @@ struct R: Rswift.Validatable {
     static let todayIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "todayIcon")
     /// Image `wsAdd`.
     static let wsAdd = Rswift.ImageResource(bundle: R.hostingBundle, name: "wsAdd")
+    /// Image `wsAdder`.
+    static let wsAdder = Rswift.ImageResource(bundle: R.hostingBundle, name: "wsAdder")
     
     /// `UIImage(named: "BG", bundle: ..., traitCollection: ...)`
     static func bG(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -200,6 +202,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "wsAdd", bundle: ..., traitCollection: ...)`
     static func wsAdd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.wsAdd, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "wsAdder", bundle: ..., traitCollection: ...)`
+    static func wsAdder(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.wsAdder, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
