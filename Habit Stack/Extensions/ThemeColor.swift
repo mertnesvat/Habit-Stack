@@ -10,6 +10,10 @@ extension UIColor {
 }
 
 extension UIFont {
+    static var huge: UIFont {
+        return UIFont(name: "AvenirNextCondensed-Medium", size: 40) ?? UIFont.systemFont(ofSize: 40)
+    }
+    
     static var heading1: UIFont {
         return UIFont(name: "AvenirNextCondensed-Medium", size: 25) ?? UIFont.systemFont(ofSize: 25)
     }

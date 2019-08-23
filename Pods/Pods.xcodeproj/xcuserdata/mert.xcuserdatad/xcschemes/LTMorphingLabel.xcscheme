@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53168D742B20080CCF32FE335DA71517"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "E9D0F27BDB1B412F397EC2EF4645CB03"
+               BlueprintName = "LTMorphingLabel"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "LTMorphingLabel.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -23,5 +23,5 @@ target 'Habit Stack' do
   pod 'CodableFirebase'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'LTMorphingLabel'
 end
