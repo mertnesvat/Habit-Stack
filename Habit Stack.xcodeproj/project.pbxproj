@@ -43,6 +43,7 @@
 		41555608230341C400EE963F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41555607230341C400EE963F /* EmptyView.swift */; };
 		4155560B2303491A00EE963F /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155560A2303491A00EE963F /* WordModel.swift */; };
 		4155560D23034BBB00EE963F /* F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155560C23034BBB00EE963F /* F.swift */; };
+		41F2EB3E231059E70011E1C6 /* BrainOverloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EB3D231059E70011E1C6 /* BrainOverloadViewController.swift */; };
 		DCA38BD23BEDF771133E4CD2 /* Pods_Habit_Stack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FC5FD3C1EEF33C6ADB9496 /* Pods_Habit_Stack.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		41555607230341C400EE963F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		4155560A2303491A00EE963F /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		4155560C23034BBB00EE963F /* F.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F.swift; sourceTree = "<group>"; };
+		41F2EB3D231059E70011E1C6 /* BrainOverloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainOverloadViewController.swift; sourceTree = "<group>"; };
 		5C682E6AEEC48AB0113DB459 /* Pods-Habit Stack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Stack.debug.xcconfig"; path = "Target Support Files/Pods-Habit Stack/Pods-Habit Stack.debug.xcconfig"; sourceTree = "<group>"; };
 		9CDBB6DC6BE1DC261621ED50 /* Pods-Habit Stack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Stack.release.xcconfig"; path = "Target Support Files/Pods-Habit Stack/Pods-Habit Stack.release.xcconfig"; sourceTree = "<group>"; };
 		B3FC5FD3C1EEF33C6ADB9496 /* Pods_Habit_Stack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Stack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 		4127404822F623CC0069D41C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EB3C231059C60011E1C6 /* FastForward */,
 				4127405122F654250069D41C /* Selection */,
 				4127404C22F624800069D41C /* Intro */,
 			);
@@ -242,6 +245,14 @@
 				4155560A2303491A00EE963F /* WordModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		41F2EB3C231059C60011E1C6 /* FastForward */ = {
+			isa = PBXGroup;
+			children = (
+				41F2EB3D231059E70011E1C6 /* BrainOverloadViewController.swift */,
+			);
+			path = FastForward;
 			sourceTree = "<group>";
 		};
 		44B9CE6BE2E0AFF8E9C9ECB4 /* Frameworks */ = {
@@ -453,6 +464,7 @@
 				41555608230341C400EE963F /* EmptyView.swift in Sources */,
 				4127403F22F61C220069D41C /* TitleLabel.swift in Sources */,
 				4127404722F620A50069D41C /* MainButton.swift in Sources */,
+				41F2EB3E231059E70011E1C6 /* BrainOverloadViewController.swift in Sources */,
 				4127402522F60D6E0069D41C /* AppDelegate.swift in Sources */,
 				4127404322F61D570069D41C /* UI.swift in Sources */,
 				4127404B22F623F90069D41C /* IntroViewController.swift in Sources */,

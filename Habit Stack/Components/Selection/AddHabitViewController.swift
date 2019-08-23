@@ -13,7 +13,6 @@ class AddHabitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        setupRx()
         layout()
     }
 }
@@ -25,12 +24,16 @@ extension AddHabitViewController {
             switch i {
             case 0:
                 btn.setTitle("Verb", for: .normal)
+                btn.tag = 3
             case 1:
                 btn.setTitle("Adjective", for: .normal)
+                btn.tag = 2
             case 2:
                 btn.setTitle("Feminine Noun", for: .normal)
+                btn.tag = 0
             case 3:
                 btn.setTitle("Masculine Noun", for: .normal)
+                btn.tag = 1
             default:
                 break
             }
@@ -71,10 +74,12 @@ extension AddHabitViewController {
         exampleLabel.font = .desc
         exampleLabel.text = "Example"
         
-        submit.setBackgroundImage(R.image.addIcon()!, for: .normal)
+        submit.setTitleColor(.brandPink, for: .normal)
+        submit.setTitle("Add New Word", for: .normal)
         submit.backgroundColor = .white
-        submit.layer.cornerRadius = 30
+        submit.layer.cornerRadius = 8
         submit.layer.masksToBounds = true
+        submit.addTarget(self, action: #selector(submitWord), for: .touchUpInside)
         
         example.layer.cornerRadius = 8
         example.layer.masksToBounds = true
@@ -90,13 +95,16 @@ extension AddHabitViewController {
         btn.isSelected = true
     }
     
-    func setupRx() {
+    @objc func submitWord() {
+        let selectedType = type.filter { $0.isSelected == true }.first?.tag
         
+        F.addWord(WordModel(word: word.text ?? "", type: WordType(rawValue: selectedType ?? 0), translation: translation.text ?? "", examples: [example.text], createdDate: Date()))
+        self.dismiss(animated: true, completion: nil)
     }
     
     func layout() {
         addNewWord.easy.layout(Top(60), Left(20), Height(30))
-        submit.easy.layout(Bottom(16), Right(16), Height(50), Width(50))
+        submit.easy.layout(Bottom(40), Right(16), Height(50), Left(16))
         word.easy.layout(Left(20), Right(20), Top(10).to(addNewWord, .bottom), Height(60))
         translation.easy.layout(Left(20), Right(20), Top(10).to(word, .bottom), Height(40))
         

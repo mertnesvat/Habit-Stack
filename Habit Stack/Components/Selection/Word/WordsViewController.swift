@@ -18,12 +18,17 @@ class WordsViewController: UIViewController {
         setupRx()
         layout()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getData()
+    }
 }
 
 extension WordsViewController {
     func setup() {
         navigationItem.title = "Word Stack"
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: R.image.wsAdd()!, style: UIBarButtonItem.Style.plain, target: self, action: #selector(addAction))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.fastForward, target: self, action: #selector(fastForwards))
 //        navigationItem.rightBarButtonItem?.tintColor = .brandPink
         view.addSubviews([tableView, addButton])
         tableView.register(WordCell.self, forCellReuseIdentifier: "WordCell")
@@ -50,5 +55,9 @@ extension WordsViewController {
 extension WordsViewController {
     @objc func addAction() {
         self.navigationController?.present(AddHabitViewController(), animated: true, completion: nil)
+    }
+    
+    @objc func fastForwards() {
+        self.navigationController?.present(BrainOverloadViewController(), animated: true, completion: nil)
     }
 }

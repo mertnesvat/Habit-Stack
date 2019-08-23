@@ -1,11 +1,11 @@
 import Foundation
 
 enum WordType: Int, Codable {
-    case feminineNoun
-    case masculineNoun
-    case adjective
-    case verb
-    case pronoun
+    case feminineNoun = 0
+    case masculineNoun = 1
+    case adjective = 2
+    case verb = 3
+    case pronoun = 4
 }
 
 struct WordModel: Codable {
