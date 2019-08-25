@@ -24,14 +24,14 @@
                                     <constraint firstAttribute="width" secondItem="RYc-i7-11x" secondAttribute="height" multiplier="1:1" id="jDQ-vY-bI2"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Stack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMl-OP-vgt" customClass="TitleLabel" customModule="Habit_Stack" customModuleProvider="target">
-                                <rect key="frame" x="154.5" y="440.5" width="105.5" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Stack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMl-OP-vgt" customClass="TitleLabel" customModule="Habit_Stack" customModuleProvider="target">
+                                <rect key="frame" x="154.5" y="440" width="105" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..for a better life." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go1-2D-wzg" customClass="DescriptionLabel" customModule="Habit_Stack" customModuleProvider="target">
-                                <rect key="frame" x="242" y="474" width="125.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..experimental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go1-2D-wzg" customClass="DescriptionLabel" customModule="Habit_Stack" customModuleProvider="target">
+                                <rect key="frame" x="241.5" y="474" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -92,17 +92,15 @@
                                     <constraint firstAttribute="height" constant="300" id="9Qy-sd-hwt"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osa-Ny-OQH">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osa-Ny-OQH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="896"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EZm-cM-mdN">
-                                        <rect key="frame" x="187.5" y="692" width="39" height="37"/>
-                                    </pageControl>
-                                </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="xBa-dr-KC9" id="D4h-S8-jLi"/>
                                 </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EZm-cM-mdN">
+                                <rect key="frame" x="187.5" y="725" width="39" height="37"/>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnP-3Y-plF" customClass="MainButton" customModule="Habit_Stack" customModuleProvider="target">
                                 <rect key="frame" x="83" y="802" width="248" height="40"/>
                                 <constraints>
@@ -118,15 +116,15 @@
                         <constraints>
                             <constraint firstItem="osa-Ny-OQH" firstAttribute="top" secondItem="e4c-T9-yil" secondAttribute="top" id="2Nf-b2-aiz"/>
                             <constraint firstItem="osa-Ny-OQH" firstAttribute="width" secondItem="sGV-Id-smb" secondAttribute="width" id="3mH-Q0-xls"/>
-                            <constraint firstItem="EZm-cM-mdN" firstAttribute="centerX" secondItem="NnP-3Y-plF" secondAttribute="centerX" id="7r6-EH-QcZ"/>
                             <constraint firstItem="e4c-T9-yil" firstAttribute="bottom" secondItem="NnP-3Y-plF" secondAttribute="bottom" constant="20" id="I1Y-nM-wZg"/>
+                            <constraint firstItem="EZm-cM-mdN" firstAttribute="centerX" secondItem="NnP-3Y-plF" secondAttribute="centerX" id="I94-Xf-6ef"/>
                             <constraint firstItem="Stt-Yt-FVv" firstAttribute="centerX" secondItem="e4c-T9-yil" secondAttribute="centerX" id="KJL-IZ-oyf"/>
                             <constraint firstItem="Stt-Yt-FVv" firstAttribute="width" secondItem="sGV-Id-smb" secondAttribute="width" id="MHE-1R-3tV"/>
                             <constraint firstItem="NnP-3Y-plF" firstAttribute="width" secondItem="sGV-Id-smb" secondAttribute="width" multiplier="0.6" id="SBu-rB-l5A"/>
                             <constraint firstItem="osa-Ny-OQH" firstAttribute="height" secondItem="sGV-Id-smb" secondAttribute="height" id="SKS-XJ-XJw"/>
                             <constraint firstItem="osa-Ny-OQH" firstAttribute="centerX" secondItem="e4c-T9-yil" secondAttribute="centerX" id="fdi-D3-IWp"/>
-                            <constraint firstItem="NnP-3Y-plF" firstAttribute="top" secondItem="EZm-cM-mdN" secondAttribute="bottom" constant="29" id="rFb-wT-ArJ"/>
                             <constraint firstItem="NnP-3Y-plF" firstAttribute="centerX" secondItem="e4c-T9-yil" secondAttribute="centerX" id="ulo-9J-bzF"/>
+                            <constraint firstItem="NnP-3Y-plF" firstAttribute="top" secondItem="EZm-cM-mdN" secondAttribute="bottom" constant="40" id="xhT-SP-DAz"/>
                             <constraint firstItem="Stt-Yt-FVv" firstAttribute="bottom" secondItem="e4c-T9-yil" secondAttribute="bottom" constant="34" id="z4r-xZ-pUT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e4c-T9-yil"/>
@@ -139,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncn-Ns-VCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="126"/>
+            <point key="canvasLocation" x="937.68115942028987" y="125.89285714285714"/>
         </scene>
         <!--Words View Controller-->
         <scene sceneID="odm-Yr-qAg">

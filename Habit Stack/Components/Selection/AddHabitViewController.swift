@@ -56,6 +56,7 @@ extension AddHabitViewController {
         view.backgroundColor = .brandPink
         word.backgroundColor = .white
         word.layer.cornerRadius = 8
+        word.delegate = self
 //        word.leftViewMode = .always
 //        word.leftView = UIView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         word.layer.masksToBounds = true
@@ -69,6 +70,7 @@ extension AddHabitViewController {
         translation.layer.masksToBounds = true
         translation.attributedPlaceholder = NSAttributedString(string: "Translation", attributes: [NSAttributedString.Key.foregroundColor : UIColor.brandPink.withAlphaComponent(0.7)])
         translation.textColor = .titleGray
+        translation.delegate = self
         
         exampleLabel.textColor = .white
         exampleLabel.font = .desc
@@ -84,6 +86,7 @@ extension AddHabitViewController {
         example.layer.cornerRadius = 8
         example.layer.masksToBounds = true
         example.textColor = .titleGray
+        example.delegate = self
         
     }
     
@@ -117,4 +120,16 @@ extension AddHabitViewController {
         exampleLabel.easy.layout(Top(10).to(type[3], .bottom), Left().to(example, .left))
         example.easy.layout(Height(80), Top(10).to(exampleLabel, .bottom), Left(20), Right(20))
     }
+}
+
+extension AddHabitViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        submitWord()
+        return true
+    }
+}
+
+extension AddHabitViewController: UITextViewDelegate {
+    
 }

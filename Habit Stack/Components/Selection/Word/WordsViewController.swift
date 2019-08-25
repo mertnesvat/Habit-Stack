@@ -29,7 +29,10 @@ extension WordsViewController {
     func setup() {
         navigationItem.title = "Word Stack"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.fastForward, target: self, action: #selector(fastForwards))
-//        navigationItem.rightBarButtonItem?.tintColor = .brandPink
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(downloadPage))
+        navigationItem.rightBarButtonItem?.tintColor = .brandPink
+        navigationItem.leftBarButtonItem?.tintColor = .brandPink
+
         view.addSubviews([tableView, addButton])
         tableView.register(WordCell.self, forCellReuseIdentifier: "WordCell")
         tableView.rowHeight = UITableView.automaticDimension
@@ -44,6 +47,14 @@ extension WordsViewController {
         viewModel.wordList.bind(to: self.tableView.rx.items(cellIdentifier: "WordCell", cellType: WordCell.self)) { (row, element, cell) in
             cell.setup(with: element)
             }.disposed(by: disposeBag)
+        
+        viewModel.wordList.subscribe(onNext: { [weak self] words in
+            if words.isEmpty {
+                self?.tableView.backgroundView = self?.emptyV
+            } else {
+                self?.tableView.backgroundView = nil
+            }
+        }).disposed(by: self.disposeBag)
     }
     
     private func layout() {
@@ -59,5 +70,9 @@ extension WordsViewController {
     
     @objc func fastForwards() {
         self.navigationController?.present(BrainOverloadViewController(), animated: true, completion: nil)
+    }
+    
+    @objc func downloadPage() {
+        
     }
 }

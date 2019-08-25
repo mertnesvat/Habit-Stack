@@ -9,25 +9,29 @@
 import UIKit
 import SwiftyUserDefaults
 import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    static var shared: AppDelegate!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AppDelegate.shared = self
+        IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
 
         Auth.auth().signInAnonymously() { (authResult, error) in
             // ...
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            if error == nil {
-                Defaults[.currentUser] = false
+            if Defaults[.firstTimeUser] == false {
                 self.window?.rootViewController = R.storyboard.main.storyTab()
             } else {
-                Defaults[.currentUser] = true
                 self.window?.rootViewController = R.storyboard.main.storyLogin()
+                Defaults[.firstTimeUser] = true
             }
             
             self.window?.makeKeyAndVisible()

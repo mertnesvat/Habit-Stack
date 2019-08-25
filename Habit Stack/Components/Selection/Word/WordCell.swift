@@ -21,6 +21,8 @@ class WordCell: UITableViewCell {
         contentView.layer.cornerRadius = 8
         contentView.layer.masksToBounds = true
         
+        selectionStyle = .none
+        
         layout()
     }
     
