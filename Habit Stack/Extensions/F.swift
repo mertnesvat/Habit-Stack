@@ -10,18 +10,23 @@ class F {
         
     }
     
-    static func fetchWords(callback: @escaping ([WordModel]) -> Void) {
-        
-        myWords.queryLimited(toLast: 30).observeSingleEvent(of: .value) { (ss) in
+    static func fetchWords(page: UInt, callback: @escaping ([WordModel]) -> Void) {
+        var item: UInt = page * 30
+        myWords.queryLimited(toFirst: item).observeSingleEvent(of: .value) { (ss) in
             let seq = ss.children
             var words = [WordModel]()
             while let rest = seq.nextObject() as? DataSnapshot {
-                let element = try! FirebaseDecoder().decode(WordModel.self, from: rest.value!)
-                words.append(element)
+                do {
+                    let element = try FirebaseDecoder().decode(WordModel.self, from: rest.value!)
+                    words.append(element)
+                } catch {
+                    print(error)
+                }
             }
-            
+
             callback(words)
         }
+        
     }
     
     static func addWord(_ word: WordModel) {

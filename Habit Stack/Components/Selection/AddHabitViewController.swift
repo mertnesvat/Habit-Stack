@@ -101,7 +101,7 @@ extension AddHabitViewController {
     @objc func submitWord() {
         let selectedType = type.filter { $0.isSelected == true }.first?.tag
         
-        F.addWord(WordModel(word: word.text ?? "", type: WordType(rawValue: selectedType ?? 0), translation: translation.text ?? "", examples: [example.text], createdDate: Date()))
+        F.addWord(WordModel(word: word.text ?? "", type: WordType(rawValue: selectedType ?? 0), translation: translation.text ?? "", createdDate: Date()))
         self.dismiss(animated: true, completion: nil)
     }
     

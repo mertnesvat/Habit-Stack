@@ -39,6 +39,7 @@
 		4127405922F6565B0069D41C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127405822F6565B0069D41C /* TodayViewController.swift */; };
 		4148E27D2304C82C00F5CDFF /* WordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148E27C2304C82C00F5CDFF /* WordsViewModel.swift */; };
 		4148E27F2304C97300F5CDFF /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148E27E2304C97300F5CDFF /* WordCell.swift */; };
+		4153497123173D3E000AE2E9 /* ModelWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153497023173D3E000AE2E9 /* ModelWords.swift */; };
 		4155560623033D4300EE963F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4155560523033D4300EE963F /* GoogleService-Info.plist */; };
 		41555608230341C400EE963F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41555607230341C400EE963F /* EmptyView.swift */; };
 		4155560B2303491A00EE963F /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155560A2303491A00EE963F /* WordModel.swift */; };
@@ -82,6 +83,7 @@
 		4127405822F6565B0069D41C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4148E27C2304C82C00F5CDFF /* WordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewModel.swift; sourceTree = "<group>"; };
 		4148E27E2304C97300F5CDFF /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		4153497023173D3E000AE2E9 /* ModelWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelWords.swift; sourceTree = "<group>"; };
 		4155560523033D4300EE963F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41555607230341C400EE963F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		4155560A2303491A00EE963F /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				4155560A2303491A00EE963F /* WordModel.swift */,
+				4153497023173D3E000AE2E9 /* ModelWords.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -370,7 +373,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -472,6 +475,7 @@
 				4127404B22F623F90069D41C /* IntroViewController.swift in Sources */,
 				4155560B2303491A00EE963F /* WordModel.swift in Sources */,
 				4127405322F654470069D41C /* MainTabViewController.swift in Sources */,
+				4153497123173D3E000AE2E9 /* ModelWords.swift in Sources */,
 				4148E27F2304C97300F5CDFF /* WordCell.swift in Sources */,
 				4127403822F60F050069D41C /* R.generated.swift in Sources */,
 				4127405522F654F30069D41C /* UserDefaults.swift in Sources */,

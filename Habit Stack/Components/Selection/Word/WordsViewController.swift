@@ -27,9 +27,12 @@ class WordsViewController: UIViewController {
 
 extension WordsViewController {
     func setup() {
+        
+//        ModelWords().addMe()
+        
         navigationItem.title = "Word Stack"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.fastForward, target: self, action: #selector(fastForwards))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(downloadPage))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(downloadPage))
         navigationItem.rightBarButtonItem?.tintColor = .brandPink
         navigationItem.leftBarButtonItem?.tintColor = .brandPink
 
@@ -47,6 +50,14 @@ extension WordsViewController {
         viewModel.wordList.bind(to: self.tableView.rx.items(cellIdentifier: "WordCell", cellType: WordCell.self)) { (row, element, cell) in
             cell.setup(with: element)
             }.disposed(by: disposeBag)
+        
+        tableView.rx.prefetchRows.subscribe(onNext: { [weak self] idx in
+            print(idx)
+            let needsFetch = idx.contains { $0.row >= ((self?.viewModel.wordList.value.count ?? Int.max) - 1) }
+            if needsFetch {
+                self?.viewModel.getNextPage()
+            }
+        }).disposed(by: disposeBag)
         
         viewModel.wordList.subscribe(onNext: { [weak self] words in
             if words.isEmpty {

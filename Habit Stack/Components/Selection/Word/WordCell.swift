@@ -35,7 +35,7 @@ class WordCell: UITableViewCell {
     func setup(with data: WordModel) {
         word.text = data.word
         translation.text = data.translation
-        example.text = data.examples?.first
+        example.text = ""
         
         if let ty = data.type {
             type.setup(with: ty)

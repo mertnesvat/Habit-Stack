@@ -4,7 +4,7 @@ import LTMorphingLabel
 
 class BrainOverloadViewController: UIViewController {
     let word = LTMorphingLabel()
-    let translation = LTMorphingLabel()
+    let translation = UILabel()
     var wordList: [WordModel] = []
     var index = 0
     let close = UIButton()
@@ -27,8 +27,9 @@ extension BrainOverloadViewController {
         word.font = .huge
         word.morphingEffect = effect!
         translation.textColor = .brandPink
-        translation.delegate = self
-        translation.morphingEffect = effect!
+        translation.numberOfLines = 0
+        translation.lineBreakMode = .byWordWrapping
+        translation.textAlignment = .center
         translation.font = .heading1
         close.setImage(R.image.addIcon()!, for: .normal)
         close.addTarget(self, action: #selector(closeExample), for: .touchUpInside)
@@ -36,17 +37,18 @@ extension BrainOverloadViewController {
     }
     
     func setupRx () {
-        F.fetchWords { [weak self] list in
+        F.fetchWords(page: 3) { [weak self] list in
             self?.wordList = list
             self?.start()
         }
-
     }
     
     func layout() {
         word.easy.layout(CenterX(), CenterY())
-        translation.easy.layout(Top(40).to(word, .bottom), CenterX())
+        translation.easy.layout(Top(40).to(word, .bottom), Left(16), Right(16), Bottom(16))
         close.easy.layout(Top(40), Right(16), Width(40), Height(40))
+//        translation.setContentHuggingPriority(UILayoutPriority.defaultLow, for: NSLayoutConstraint.Axis.vertical)
+//        translation.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .vertical)
     }
     
     func start() {

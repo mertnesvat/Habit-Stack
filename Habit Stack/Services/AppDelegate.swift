@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window?.rootViewController = R.storyboard.main.storyTab()
             } else {
                 self.window?.rootViewController = R.storyboard.main.storyLogin()
-                Defaults[.firstTimeUser] = true
+                Defaults[.firstTimeUser] = false
             }
             
             self.window?.makeKeyAndVisible()
