@@ -1,5 +1,23 @@
 import Foundation
 
+class DownloadModel: Codable {
+    let title: String
+    let description: String
+    let prettyWords: [String: String]
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case description
+        case prettyWords
+    }
+    
+    init(title: String, description: String, words: [String: String]) {
+        self.title = title
+        self.description = description
+        self.prettyWords = words
+    }
+}
+
 class ModelWords {
     static let prettyWords: [String: String] = ["abattoir " : "a slaughterhouse; massacre",
                                                 "absinthe " : "wormwood liquor of a bright-green color",
@@ -755,7 +773,7 @@ class ModelWords {
 extension ModelWords {
     func addMe() {
         ModelWords.prettyWords.forEach { w in
-            F.addWord(WordModel(word: w.key, type: WordType.unknown, translation: w.value, createdDate: Date()))
+            F.add(WordModel(word: w.key, type: WordType.unknown, translation: w.value, createdDate: Date()))
         }
     }
 }

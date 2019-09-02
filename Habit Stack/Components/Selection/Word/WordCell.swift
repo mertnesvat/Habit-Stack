@@ -7,6 +7,7 @@ class WordCell: UITableViewCell {
     let translation = UILabel()
     let example = DescriptionLabel()
     let type = WordTypeView(frame: .zero)
+    var install: UIButton?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -21,6 +22,18 @@ class WordCell: UITableViewCell {
         contentView.layer.cornerRadius = 8
         contentView.layer.masksToBounds = true
         
+        if reuseIdentifier == "DownloadCell" {
+            
+            install = UIButton.init(type: .roundedRect)
+            install?.tintColor = .brandPink
+            install?.layer.borderWidth = 2
+            install?.layer.borderColor = UIColor.brandPink.cgColor
+            install?.setTitle("Install", for: .normal)
+            install?.isUserInteractionEnabled = false
+            contentView.addSubview(install!)
+        }
+        
+        
         selectionStyle = .none
         
         layout()
@@ -32,10 +45,18 @@ class WordCell: UITableViewCell {
         layout()
     }
     
+    func setup(with download: DownloadModel) {
+        word.text = download.title
+        translation.text = ""
+        example.text = download.description
+        
+        type.isHidden = true
+    }
+    
     func setup(with data: WordModel) {
         word.text = data.word
-        translation.text = data.translation
-        example.text = ""
+        translation.text = ""
+        example.text = data.translation
         
         if let ty = data.type {
             type.setup(with: ty)
@@ -48,6 +69,10 @@ class WordCell: UITableViewCell {
         translation.easy.layout(Left(8), Top(8).to(word, .bottom), Height(19))
         example.easy.layout(Bottom(), Right(8), Left(8), Top(20).to(translation, .bottom), Height(44))
         type.easy.layout(Right(8), Top(5))
+        
+        if let b = install {
+            b.easy.layout(Right(20), Width(70), Height(20), Bottom(20))
+        }
     }
 }
 

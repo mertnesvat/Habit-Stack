@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410D717F231C604800418F8D /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410D717E231C604800418F8D /* DownloadViewController.swift */; };
+		410D7181231C62A200418F8D /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410D7180231C62A200418F8D /* DownloadViewModel.swift */; };
 		410D97FA23055F410060E34B /* AvenirNextCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97EE23055F410060E34B /* AvenirNextCondensed-Medium.ttf */; };
 		410D97FB23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97EF23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf */; };
 		410D97FC23055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410D97F023055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410D717E231C604800418F8D /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		410D7180231C62A200418F8D /* DownloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewModel.swift; sourceTree = "<group>"; };
 		410D97EE23055F410060E34B /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		410D97EF23055F410060E34B /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
 		410D97F023055F410060E34B /* AvenirNextCondensed-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410D717D231C603900418F8D /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				410D717E231C604800418F8D /* DownloadViewController.swift */,
+				410D7180231C62A200418F8D /* DownloadViewModel.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
 		410D97ED23055F340060E34B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +218,7 @@
 		4127404822F623CC0069D41C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				410D717D231C603900418F8D /* Download */,
 				41F2EB3C231059C60011E1C6 /* FastForward */,
 				4127405122F654250069D41C /* Selection */,
 				4127404C22F624800069D41C /* Intro */,
@@ -482,9 +496,11 @@
 				4127405922F6565B0069D41C /* TodayViewController.swift in Sources */,
 				4127404E22F624950069D41C /* IntroViewModel.swift in Sources */,
 				4127405722F656560069D41C /* AddHabitViewController.swift in Sources */,
+				410D717F231C604800418F8D /* DownloadViewController.swift in Sources */,
 				4127405022F651060069D41C /* WordsViewController.swift in Sources */,
 				4127404522F61DCC0069D41C /* ThemeColor.swift in Sources */,
 				4155560D23034BBB00EE963F /* F.swift in Sources */,
+				410D7181231C62A200418F8D /* DownloadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

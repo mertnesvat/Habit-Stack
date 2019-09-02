@@ -29,10 +29,14 @@ extension WordsViewController {
     func setup() {
         
 //        ModelWords().addMe()
+        let model = DownloadModel.init(title: "Pretty Words",
+                                       description: "pretty words",
+                                       words: ModelWords.prettyWords)
+//        F.add(model)
         
         navigationItem.title = "Word Stack"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.fastForward, target: self, action: #selector(fastForwards))
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(downloadPage))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(downloadPage))
         navigationItem.rightBarButtonItem?.tintColor = .brandPink
         navigationItem.leftBarButtonItem?.tintColor = .brandPink
 
@@ -85,5 +89,7 @@ extension WordsViewController {
     
     @objc func downloadPage() {
         
+        var navVC = UINavigationController(rootViewController: DownloadViewController())
+        self.navigationController?.present(navVC, animated: true, completion: nil)
     }
 }
