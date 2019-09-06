@@ -18,10 +18,10 @@ class EmptyView: UIView {
     
     private func setupNoWords() {
         image.image = R.image.noWords()!
-        title.text = "No words?"
+        title.text = "Yayy!"
         title.textColor = .titleGray
         
-        desc.text = "You can add words by yourself \n for expanding your word stack!"
+        desc.text = "Fill your stack \n with rarefied words!"
         desc.textColor = .brandPink
         desc.textAlignment = .center
         desc.numberOfLines = 2

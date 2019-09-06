@@ -40,7 +40,7 @@ extension WordsViewController {
         navigationItem.rightBarButtonItem?.tintColor = .brandPink
         navigationItem.leftBarButtonItem?.tintColor = .brandPink
 
-        view.addSubviews([tableView, addButton])
+        view.addSubview(tableView)
         tableView.register(WordCell.self, forCellReuseIdentifier: "WordCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65.0

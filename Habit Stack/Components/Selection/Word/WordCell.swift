@@ -5,13 +5,12 @@ class WordCell: UITableViewCell {
     
     let word = TitleLabel()
     let translation = UILabel()
-    let example = DescriptionLabel()
     let type = WordTypeView(frame: .zero)
     var install: UIButton?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubviews([word, translation, example, type])
+        contentView.addSubviews([word, translation, type])
         translation.font = UIFont.heading3
         contentView.backgroundColor = .white
         backgroundColor = .clear
@@ -41,22 +40,21 @@ class WordCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        contentView.addSubviews([word, translation, example, type])
+        contentView.addSubviews([word, translation, type])
         layout()
     }
     
     func setup(with download: DownloadModel) {
         word.text = download.title
-        translation.text = ""
-        example.text = download.description
+        translation.text = download.description
         
         type.isHidden = true
     }
     
     func setup(with data: WordModel) {
         word.text = data.word
-        translation.text = ""
-        example.text = data.translation
+        translation.text = data.translation
+        translation.numberOfLines = 0
         
         if let ty = data.type {
             type.setup(with: ty)
@@ -66,8 +64,7 @@ class WordCell: UITableViewCell {
     func layout() {
         contentView.easy.layout(Edges(8))
         word.easy.layout(Left(8), Top(5), Height(34))
-        translation.easy.layout(Left(8), Top(8).to(word, .bottom), Height(19))
-        example.easy.layout(Bottom(), Right(8), Left(8), Top(20).to(translation, .bottom), Height(44))
+        translation.easy.layout(Left(8), Right(8), Top(8).to(word, .bottom), Bottom(), Height(80))
         type.easy.layout(Right(8), Top(5))
         
         if let b = install {
